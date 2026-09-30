@@ -1,4 +1,6 @@
-# analisis-de-datos-estaciones-de-servicio
+## Triple Insight — Trabajo Final Integrador | Ciencia de Datos | Fundación YPF
+## Comisión 2 · Grupo 9
+## Integrantes: Azul · Carla · Trinidad
 
 ## Descripción del dataset
 El dataset contiene información sobre estaciones de servicio y comercialización de combustibles, integrando datos de identificación y características de los establecimientos, ubicación geográfica, operadores y banderas comerciales, tipo de negocio, productos comercializados, canales de comercialización y variables asociadas al volumen y precio de los combustibles.
