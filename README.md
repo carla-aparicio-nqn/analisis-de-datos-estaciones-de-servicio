@@ -36,7 +36,7 @@ A partir de estas variables, el dataset permite explorar los factores asociados 
 2024	4250
 12-2024	21601
 01-2025	17399
-## Total general:101.500
+
 • El dataset tiene información de solo 1 mes por cada año y contamos con 8 años, salvo 2024 que tenemos 2 meses (enero y diciembre).
 •	El dataset tiene una inconsistencia temporal importante:
     o	históricamente anio = año y mes = mes;
