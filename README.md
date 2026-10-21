@@ -30,6 +30,7 @@ Con esta decisión ganamos consistencia (mismas columnas y mismos formatos en to
 ## Descripción del dataset
 
 El dataset contiene información sobre estaciones de servicio y comercialización de combustibles, integrando datos de identificación y características de los establecimientos, ubicación geográfica, operadores y banderas comerciales, tipo de negocio, productos comercializados, canales de comercialización y variables asociadas al volumen y precio de los combustibles. La información se encuentra organizada a nivel de estación de servicio – producto – período, permitiendo analizar el comportamiento del volumen comercializado en función de diferentes características de la estación, el producto y las condiciones de comercialización.
+Nuestra fuente es https://www.datos.gob.ar/dataset/precios-eess-resolucion-1104-04
 
 ## Entre las principales variables disponibles se encuentran
 
