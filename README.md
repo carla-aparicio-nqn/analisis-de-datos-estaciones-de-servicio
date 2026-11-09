@@ -156,4 +156,4 @@ Podemos afirmar que el volumen que vende una estación es en buena medida predec
 - La base son fotos de enero (y febrero 2022) con muestras de tamaño desigual entre años: no permite series de tiempo ni conclusiones de estacionalidad. La baja de 2021 puede reflejar tanto la pandemia como que ese archivo tiene solo 554 estaciones.
 - La unidad de medida del volumen no está documentada en la fuente y puede diferir entre GNC y combustibles líquidos. Es necesario validarla antes de sumar o comparar volúmenes entre productos.
 - El conjunto de prueba cronológico tiene solo dos períodos (enero 2023 y enero 2024), por lo que la evaluación final debe leerse como indicativa.
-- Para agilizar la validación cruzada se usó un Random Forest reducido (30 árboles, profundidad 12). Queda pendiente ajustar hiperparámetros y consolidar las métricas finales sobre el conjunto de prueba en litros reales.
+- Para agilizar la validación cruzada se usó un Random Forest reducido (30 árboles, profundidad 12).
