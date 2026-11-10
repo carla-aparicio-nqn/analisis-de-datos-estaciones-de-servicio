@@ -150,10 +150,3 @@ Replanteamos el problema. Pasamos el volumen a escala logarítmica, quedándonos
 ### 6. Qué nos llevamos
 
 Podemos afirmar que el volumen que vende una estación es en buena medida predecible a partir de su ubicación, su bandera y el producto, siempre que se trabaje en escala logarítmica y se interprete el resultado como un orden de magnitud y no como un valor exacto. También sabemos qué no podemos afirmar: que existan tendencias mensuales o estacionales, que el precio afecte la demanda o que el modelo sirva para pronosticar meses que no observamos.
-
-## Limitaciones y próximos pasos
-
-- La base son fotos de enero (y febrero 2022) con muestras de tamaño desigual entre años: no permite series de tiempo ni conclusiones de estacionalidad. La baja de 2021 puede reflejar tanto la pandemia como que ese archivo tiene solo 554 estaciones.
-- La unidad de medida del volumen no está documentada en la fuente y puede diferir entre GNC y combustibles líquidos. Es necesario validarla antes de sumar o comparar volúmenes entre productos.
-- El conjunto de prueba cronológico tiene solo dos períodos (enero 2023 y enero 2024), por lo que la evaluación final debe leerse como indicativa.
-- Para agilizar la validación cruzada se usó un Random Forest reducido (30 árboles, profundidad 12).
