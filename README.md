@@ -437,16 +437,6 @@ Las principales limitaciones son:
 - Las segmentaciones son exploratorias, dependen de las variables resumen y del K elegido, y no son clasificaciones comerciales definitivas.
 - En la Prueba 2, el período de prueba es único (enero de 2024), y las filas sin historial previo solo pueden predecirse con atributos estáticos.
 
-## Puntos abiertos detectados en las notebooks
-
-Al contrastar los cuadernos con los resultados que documenta este README se identificaron los siguientes puntos a revisar antes de la entrega final:
-
-1. **Prueba 4, limpieza.** La celda de normalización busca la columna `no_movimientos`, pero la columna real se llama `no_novimientos`. Por eso la variable `sin_movimientos` no se crea y no se excluyen los 685 registros sin movimientos: la base "limpia" de esa notebook queda en 62.456 registros y 5.736 estaciones. El resultado final del clustering no cambia (el filtro de volumen positivo elimina esos registros y se llega igualmente a 55.836 registros y 4.988 estaciones), pero la cifra de limpieza no coincide con la de las demás notebooks (61.771 y 5.523).
-2. **Pruebas 3 y 4, textos de conclusiones.** En la Prueba 3, la conclusión 11.1 informa 1.637 y 40 estaciones para los clusters 2 y 3 (los valores ejecutados son 1.619 y 58) y presenta como "volumen" lo que son precios medianos (107,74 y 711,54), con unidad "m³" que no está documentada. Además, su cierre recomienda K=5, mientras que la Prueba 4 y este README mantienen K=4 como solución principal. En la Prueba 4, las conclusiones finales etiquetan los grupos como "Alto volumen / Canal mayorista", "Históricas / Inactivas" y "Premium", denominaciones que sus propias tablas no respaldan (por ejemplo, la mezcla de canales del cluster 3 es similar a la del resto) y que contradicen la advertencia de su sección 11.1. También afirma que las tres variables son "no correlacionadas" y detalla la varianza por componente (50,1 % y 33,3 %), datos que no figuran en las salidas de la notebook.
-3. **Prueba 3, limpieza de textos.** Las expresiones regulares de limpieza de espacios están escritas con doble barra invertida, por lo que no colapsan espacios internos ni convierten cadenas vacías en nulos. Se corrigió en la Prueba 4.
-4. **Prueba 1, textos.** El comentario sobre las cargas del PCA menciona la variable `mes`, que no forma parte de la matriz de K-Means, y la sección de elección del algoritmo indica K=6 como óptimo mientras la notebook avanza con K=4.
-5. **Prueba 2, redes neuronales.** El archivo entregado incluye la celda de resumen de resultados (sección 8) pero no las celdas de la sección 6 (perceptrón y MLP, con Keras) que los generan; por eso esos resultados no pueden reproducirse desde esa notebook. También referencia variables (`tabla`, `mejor`) definidas en esas celdas.
-
 ## Conclusiones generales
 
 En función de los resultados obtenidos en las cuatro pruebas, se concluye que K-Means constituye el método más adecuado para la segmentación de las estaciones de servicio dentro del conjunto de datos analizado. En particular, la configuración de cinco clústeres presentó el mejor desempeño estadístico entre las alternativas evaluadas, alcanzando un coeficiente de silueta de 0,43. Este resultado evidencia una estructura de agrupamiento más cohesiva y con mayor diferenciación entre los segmentos identificados que la solución de cuatro clústeres.
